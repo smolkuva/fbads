@@ -17,7 +17,6 @@ class CampaignCreator(ABC):
 
     def __init__(self, campaign: CampaignMeta):
         self.campaign = campaign
-        print(campaign.account_id)
         self.account = FbAdAccount('act_' + campaign.account_id)
 
     def create(self):
